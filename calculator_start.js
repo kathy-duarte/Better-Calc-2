@@ -87,11 +87,17 @@ function clearCurrent() {
     displayCurrentInput();
 }
 
+/**
+ * [[Divides 1 by current input]]
+ */
 function inverse() {
     current_input = 1 / current_input;
     displayCurrentInput();
 }
 
+/**
+ * [[Runs current input through a factorial]]
+ */
 function factorial() {
     var result = 1;
     for (i = current_input; i > 0; i--) {
@@ -102,6 +108,9 @@ function factorial() {
     displayCurrentInput();
 }
 
+/**
+ * [[Squares current input]]
+ */
 function square() {
     console.log(current_input);
     current_input = Math.pow(eval(current_input), 2);
@@ -109,6 +118,9 @@ function square() {
     displayCurrentInput();
 }
 
+/**
+ * [[Square roots current number]]
+ */
 function squareRoot() {
     console.log(current_input);
     current_input = Math.sqrt(current_input);
@@ -117,6 +129,9 @@ function squareRoot() {
 }
 
 
+/**
+ * [[Turns current number into a percentage]]
+ */
 function percantage() {
     console.log(current_input);
     current_input = (current_input / 100);
