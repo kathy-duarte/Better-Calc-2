@@ -116,6 +116,7 @@ function squareRoot() {
     displayCurrentInput();
 }
 
+
 function percantage() {
     console.log(current_input);
     current_input = (current_input / 100);
