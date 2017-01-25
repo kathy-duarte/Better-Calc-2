@@ -14,8 +14,7 @@ function displayCurrentInput() {
 function addDigit(dig) {
     if ((eval(current_input) == 0) && (current_input.inSdexOf(".") == -1)) {
         current_input = dig;
-    }
-    else {
+    }else {
         current_input = current_input + dig;
     }
     displayCurrentInput();
@@ -28,8 +27,7 @@ function addDecimal() {
     if (current_input.length == 0) {
         //no leading ".", use "0."
         current_input = "0.";
-    }
-    else {
+    }else {
 
         if (current_input.indexOf(".") == -1) {
             current_input = current_input + ".";
