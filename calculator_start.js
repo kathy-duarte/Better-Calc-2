@@ -12,8 +12,8 @@ function displayCurrentInput() {
  * @param {[[Number]]} dig [[This is the displayed number]]
  */
 function addDigit(dig) {
-    if ((eval(current_input) == 0) && (current_input.indexOf(".") == -1)) {
-        current_Input = dig;
+    if ((eval(current_input) == 0) && (current_input.inSdexOf(".") == -1)) {
+        current_input = dig;
     }
     else {
         current_input = current_input + dig;
@@ -30,7 +30,7 @@ function addDecimal() {
         current_input = "0.";
     }
     else {
-        // First make sure one doesn't exist
+
         if (current_input.indexOf(".") == -1) {
             current_input = current_input + ".";
         }
@@ -95,7 +95,7 @@ function calculate() {
  * [[Change the sign of the current input]]
  */
 function changeSign() {
-    current_input = current_input * -1
+    current_input = current_input * -1;
     displayCurrentInput();
 }
 /**
