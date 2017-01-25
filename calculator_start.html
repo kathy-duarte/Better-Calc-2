@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calcuator Starter App</title>
+    <script src="calculator_start.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculator App</h1>
+        <form>
+            <input type="text" id="screen" maxlength="10">
+            <div class="container">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" onclick="allClear()" class="btn btn-primary btn-sm">AC</button>
+                    <button type="button" onclick="calculate()" class="btn btn-primary btn-sm">+/-</button>
+                    <button type="button" onclick="calculate()" class="btn btn-primary btn-sm">%</button>
+                    <button type="button" onclick="storeOperator('/')" class="btn btn-primary btn-sm">/</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" onclick="addDigit('7')" class="btn btn-primary btn-sm">7</button>
+                    <button type="button" onclick="addDigit('8')" class="btn btn-primary btn-sm">8</button>
+                    <button type="button" onclick="addDigit('9')" class="btn btn-primary btn-sm">9</button>
+                    <button type="button" onclick="storeOperator('*')" class="btn btn-primary btn-sm">x</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" onclick="addDigit('4')" class="btn btn-primary btn-sm">4</button>
+                    <button type="button" onclick="addDigit('5')" class="btn btn-primary btn-sm">5</button>
+                    <button type="button" onclick="addDigit('6')" class="btn btn-primary btn-sm">6</button>
+                    <button type="button" onclick="storeOperator('-')" class="btn btn-primary btn-sm">-</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" onclick="addDigit('1')" class="btn btn-primary btn-sm">1</button>
+                    <button type="button" onclick="addDigit('2')" class="btn btn-primary btn-sm">2</button>
+                    <button type="button" onclick="addDigit('3')" class="btn btn-primary btn-sm">3</button>
+                    <button type="button" onclick="storeOperator('+')" class="btn btn-primary btn-sm">+</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" onclick="addDigit('0')" class="btn btn-primary btn-sm">0</button>
+                    <button type="button" onclick="addDecimal()" class="btn btn-primary btn-sm">.</button>
+                    <button type="button" onclick="calculate()" class="btn btn-primary btn-sm">=</button>
+                    <button type="button" onclick="inverse()" class="btn btn-primary btn-sm">1/x</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" onclick="squareRoot()" class="btn btn-primary btn-sm">√</button>
+                    <button type="button" onclick="square()" class="btn btn-primary btn-sm">x^2</button>
+                    <button type="button" onclick="factorial()" class="btn btn-primary btn-sm">x!</button>
+                    <button type="button" onclick="percantage()" class="btn btn-primary btn-sm">%/</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
