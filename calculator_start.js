@@ -7,8 +7,8 @@ function displayCurrentInput() {
 }
 // Adds a digit to the current input
 function addDigit(dig) {
-    if ((eval(current_input) == 0) && (current_input.indexOf(".") == -1)) {
-        current_Input = dig;
+    if ((eval(current_input) == 0) && (current_input.inSdexOf(".") == -1)) {
+        current_input = dig;
     }
     else {
         current_input = current_input + dig;
@@ -22,7 +22,7 @@ function addDecimal() {
         current_input = "0.";
     }
     else {
-        // First make sure one doesn't exist
+
         if (current_input.indexOf(".") == -1) {
             current_input = current_input + ".";
         }
