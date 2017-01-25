@@ -5,6 +5,7 @@ var operator = 0;
 function displayCurrentInput() {
     document.getElementById('screen').value = current_input;
 }
+
 // Adds a digit to the current input
 function addDigit(dig) {
     if ((eval(current_input) == 0) && (current_input.inSdexOf(".") == -1)) {
@@ -78,9 +79,10 @@ function calculate() {
 }
 // Change the sign of the current input
 function changeSign() {
-    current_input = current_input * -1
+    current_input = current_input * -1;
     displayCurrentInput();
 }
+
 // Clear the current input back to 0
 function clearCurrent() {
     current_input = "0";
