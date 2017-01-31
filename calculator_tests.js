@@ -28,3 +28,10 @@ QUnit.test( "Calculate inverse test", function( assert){
     assert.deepEqual(document.getElementById("screen").value, "0.20", "Passed - Expected 0.20")
     current_input = "0";
 });
+//Test for the factorial of a #
+QUnit.test( "Find factorial test", function( assert){
+    addDigit('4');
+    assert.deepEqual(document.getElementById("screen").value, "24", "Passed - Expected 24")
+    current_input = "0";
+});
+
