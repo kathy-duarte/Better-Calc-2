@@ -16,4 +16,4 @@ QUnit.test( "Add decimal test", function( assert ) {
 QUnit.test( "Change sign test", function( assert){
     addDigit('2');
     assert.deepEqual(document.getElementById("screen").value, "-2", "Passed - Expected -2")
-})
+});
