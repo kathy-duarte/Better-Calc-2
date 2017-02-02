@@ -46,7 +46,7 @@ function allClear() {
 }
 /**
  * Stores the last operator pushed for multiply, divide, add, or subtract
- * @param {function} op How to make your digits interact w/ each other
+ * @param {string} op Represents the operator
  */
 function storeOperator(op) {
     if (op.indexOf("*") > -1) {
@@ -149,7 +149,8 @@ function squareRoot() {
 /**
  * Turns current number into a percentage
  */
-function percantage() {
+function percentage() {
     current_input = (current_input / 100);
     console.log(current_input);
+    displayCurrentInput();
 }
