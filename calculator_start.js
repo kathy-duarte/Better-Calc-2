@@ -2,17 +2,17 @@ var current_input = "0";
 var memory = "0";
 var operator = 0;
 /**
- * [[Helper function for displaying the current input]]
+ * Helper function for displaying the current input
  */
 function displayCurrentInput() {
     document.getElementById('screen').value = current_input;
 }
 /**
- * [[Adds a digit to the current input]]
- * @param {[[Number]]} dig [[This is the displayed number]]
+ * Adds a digit to the current input
+ * @param {string} dig This is the displayed number
  */
 function addDigit(dig) {
-    if ((eval(current_input) == 0) && (current_input.indexOf(".") == -1)) {
+    if ((eval(current_input) == 0) && (current_input.inSdexOf(".") == -1)) {
         current_input = dig;
     }else {
         current_input = current_input + dig;
@@ -21,7 +21,7 @@ function addDigit(dig) {
 }
 //
 /**
- * [[Adds a decimal to the current input]]
+ * Adds a decimal to the current input
  */
 function addDecimal() {
     if (current_input.length == 0) {
@@ -36,7 +36,7 @@ function addDecimal() {
     displayCurrentInput();
 }
 /**
- * [[Clears everything.]]
+ * Clears everything
  */
 function allClear() {
     current_input = "0";
@@ -45,8 +45,8 @@ function allClear() {
     displayCurrentInput();
 }
 /**
- * [[Stores the last operator pushed for multiply, divide, add, or subtract.]]
- * @param {[[Operater]]} op [[How to make your digits interact w/ each other]]
+ * Stores the last operator pushed for multiply, divide, add, or subtract
+ * @param {function} op How to make your digits interact w/ each other
  */
 function storeOperator(op) {
     if (op.indexOf("*") > -1) {
@@ -66,7 +66,7 @@ function storeOperator(op) {
     displayCurrentInput();
 }
 /**
- * [[ Calculate using operator, the memory and what is current]]
+ * Calculate using operator, the memory and what is current
  */
 function calculate() {
     if (operator == 1) {
@@ -90,14 +90,14 @@ function calculate() {
     displayCurrentInput();
 }
 /**
- * [[Change the sign of the current input]]
+ * Change the sign of the current input
  */
 function changeSign() {
     current_input = current_input * -1;
     displayCurrentInput();
 }
 /**
- * [[Clear the current input back to 0]]
+ * Clear the current input back to 0
  */
 function clearCurrent() {
     current_input = "0";
@@ -105,7 +105,7 @@ function clearCurrent() {
 }
 
 /**
- * [[Divides 1 by current input]]
+ * Divides 1 by current input
  */
 function inverse() {
     current_input = 1 / current_input;
@@ -113,7 +113,7 @@ function inverse() {
 }
 
 /**
- * [[Runs current input through a factorial]]
+ * Runs current input through a factorial
  */
 function factorial() {
     var result = 1;
@@ -126,7 +126,7 @@ function factorial() {
 }
 
 /**
- * [[Squares current input]]
+ * Squares current input
  */
 function square() {
     console.log(current_input);
@@ -136,7 +136,7 @@ function square() {
 }
 
 /**
- * [[Square roots current number]]
+ * Square roots current number
  */
 function squareRoot() {
     console.log(current_input);
@@ -147,7 +147,7 @@ function squareRoot() {
 
 
 /**
- * [[Turns current number into a percentage]]
+ * Turns current number into a percentage
  */
 function percantage() {
     console.log(current_input);
