@@ -152,4 +152,5 @@ function squareRoot() {
 function percentage() {
     current_input = (current_input / 100);
     console.log(current_input);
+    displayCurrentInput();
 }
