@@ -150,8 +150,6 @@ function squareRoot() {
  * [[Turns current number into a percentage]]
  */
 function percantage() {
-    console.log(current_input);
     current_input = (current_input / 100);
     console.log(current_input);
-    displayCurrentInput();
 }

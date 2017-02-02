@@ -25,13 +25,22 @@ QUnit.test( "Change sign test", function( assert){
 //Test for finding the inverse of a #
 QUnit.test( "Calculate inverse test", function( assert){
     addDigit('5');
+    inverse(current_input);
     assert.deepEqual(document.getElementById("screen").value, "0.20", "Passed - Expected 0.20")
     current_input = "0";
 });
-//Test for the factorial of a #
+// Test for the factorial of a #
 QUnit.test( "Find factorial test", function( assert){
     addDigit('4');
+    factorial(current_input);
     assert.deepEqual(document.getElementById("screen").value, "24", "Passed - Expected 24")
     current_input = "0";
 });
 
+// Test for finding turning number into a percentage
+QUnit.test( "Finding percantage test", function ( assert){
+    addDigit('42');
+    percantage(current_input);
+    assert.deepEqual(document.getElementById("screen").value, "0.42", "Passed - Expected 0.42")
+     current_input = "0";
+});
