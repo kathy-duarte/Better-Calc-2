@@ -12,7 +12,7 @@ function displayCurrentInput() {
  * @param {string} dig This is the displayed number
  */
 function addDigit(dig) {
-    if ((eval(current_input) == 0) && (current_input.inSdexOf(".") == -1)) {
+    if ((eval(current_input) == 0) && (current_input.indexOf(".") == -1)) {
         current_input = dig;
     }else {
         current_input = current_input + dig;
@@ -149,9 +149,7 @@ function squareRoot() {
 /**
  * Turns current number into a percentage
  */
-function percantage() {
-    console.log(current_input);
+function percentage() {
     current_input = (current_input / 100);
     console.log(current_input);
-    displayCurrentInput();
 }
