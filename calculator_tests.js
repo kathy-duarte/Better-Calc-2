@@ -65,4 +65,12 @@ QUnit.test( "Calculate the square root", function( assert){
     squareRoot(current_input);
     assert.deepEqual(document.getElementById("screen").value, "2", "Passed - Expected 2")
     current_input = "0";
-})
+});
+
+// Test for clear current
+QUnit.test( "Clear Current test", function ( assert){
+    addDigit('0');
+    clearCurrent(current_input);
+    assert.deepEqual(document.getElementById("screen").value, "0", "Passed - Expected 0")
+    current_input = "0";
+});
