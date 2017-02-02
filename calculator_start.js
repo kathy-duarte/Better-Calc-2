@@ -108,7 +108,7 @@ function clearCurrent() {
  * Divides 1 by current input
  */
 function inverse() {
-    current_input = 1 / current_input;
+    current_input = 1/current_input;
     displayCurrentInput();
 }
 
