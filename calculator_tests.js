@@ -69,7 +69,7 @@ QUnit.test( "Calculate the square root", function( assert){
 
 // Test for clear current
 QUnit.test( "Clear Current test", function ( assert){
-    addDigit('0');
+    addDigit('2');
     clearCurrent(current_input);
     assert.deepEqual(document.getElementById("screen").value, "0", "Passed - Expected 0")
     current_input = "0";
