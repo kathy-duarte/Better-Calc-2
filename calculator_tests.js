@@ -56,13 +56,21 @@ QUnit.test( "Calculate the square root", function( assert){
     assert.deepEqual(document.getElementById("screen").value, "2", "Passed - Expected 2")
     current_input = "0";
 });
-
 // Test for clear current
 QUnit.test( "Clear Current test", function ( assert){
     addDigit('2');
     clearCurrent(current_input);
     assert.deepEqual(document.getElementById("screen").value, "0", "Passed - Expected 0")
     current_input = "0";
+});
+// Test for clear current
+QUnit.test( "All clear test", function ( assert){
+    addDigit('2');
+    storeOperator('*');
+    addDigit('2');
+    allClear();
+    assert.deepEqual(memory, "0", "Passed - Memory has been cleared.")
+    assert.deepEqual(document.getElementById("screen").value, "0", "Passed - Expected 0")
 });
 // Tests for storeOperator and calculate
 QUnit.test( "Multiply operator and calculate test", function ( assert){
@@ -96,4 +104,4 @@ QUnit.test( "Subraction operator and calculate test", function ( assert){
     calculate(current_input);
         assert.deepEqual(document.getElementById("screen").value, "2", "Passed - Expected 2")
     current_input = "0";
-})
+});

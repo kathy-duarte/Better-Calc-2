@@ -14,7 +14,8 @@ function displayCurrentInput() {
 function addDigit(dig) {
     if ((eval(current_input) == 0) && (current_input.indexOf(".") == -1)) {
         current_input = dig;
-    }else {
+    }
+    else {
         current_input = current_input + dig;
     }
     displayCurrentInput();
@@ -27,8 +28,8 @@ function addDecimal() {
     if (current_input.length == 0) {
         //no leading ".", use "0."
         current_input = "0.";
-    }else {
-
+    }
+    else {
         if (current_input.indexOf(".") == -1) {
             current_input = current_input + ".";
         }
@@ -103,15 +104,13 @@ function clearCurrent() {
     current_input = "0";
     displayCurrentInput();
 }
-
 /**
  * Divides 1 by current input
  */
 function inverse() {
-    current_input = 1/current_input;
+    current_input = 1 / current_input;
     displayCurrentInput();
 }
-
 /**
  * Runs current input through a factorial
  */
@@ -124,7 +123,6 @@ function factorial() {
     current_input = result;
     displayCurrentInput();
 }
-
 /**
  * Squares current input
  */
@@ -134,7 +132,6 @@ function square() {
     console.log(current_input);
     displayCurrentInput();
 }
-
 /**
  * Square roots current number
  */
@@ -144,8 +141,6 @@ function squareRoot() {
     console.log(current_input);
     displayCurrentInput();
 }
-
-
 /**
  * Turns current number into a percentage
  */
