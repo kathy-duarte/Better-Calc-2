@@ -64,3 +64,36 @@ QUnit.test( "Clear Current test", function ( assert){
     assert.deepEqual(document.getElementById("screen").value, "0", "Passed - Expected 0")
     current_input = "0";
 });
+// Tests for storeOperator and calculate
+QUnit.test( "Multiply operator and calculate test", function ( assert){
+  addDigit('2');
+    storeOperator('*');
+    addDigit('2');
+    calculate(current_input);
+        assert.deepEqual(document.getElementById("screen").value, "4", "Passed - Expected 4")
+    current_input = "0";
+})
+QUnit.test( "Divide operator and calculate test", function ( assert){
+  addDigit('2');
+    storeOperator('/');
+    addDigit('2');
+    calculate(current_input);
+        assert.deepEqual(document.getElementById("screen").value, "1", "Passed - Expected 1")
+    current_input = "0";
+})
+QUnit.test( "Addition operator and calculate test", function ( assert){
+  addDigit('2');
+    storeOperator('+');
+    addDigit('3');
+    calculate(current_input);
+        assert.deepEqual(document.getElementById("screen").value, "5", "Passed - Expected 5")
+    current_input = "0";
+})
+QUnit.test( "Subraction operator and calculate test", function ( assert){
+  addDigit('5');
+    storeOperator('-');
+    addDigit('3');
+    calculate(current_input);
+        assert.deepEqual(document.getElementById("screen").value, "2", "Passed - Expected 2")
+    current_input = "0";
+})
