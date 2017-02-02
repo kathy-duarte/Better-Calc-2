@@ -50,4 +50,10 @@ QUnit.test( "Finding percentage test", function ( assert){
     assert.deepEqual(document.getElementById("screen").value, "0.42", "Passed - Expected 0.42")
      current_input = "0";
 });
-
+//Test for finding the square root of a number
+QUnit.test( "Calculate the square root", function( assert){
+    addDigit('4');
+    squareRoot(current_input);
+    assert.deepEqual(document.getElementById("screen").value, "2", "Passed - Expected 2")
+    current_input = "0";
+})
