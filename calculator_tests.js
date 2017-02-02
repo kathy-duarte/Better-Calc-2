@@ -21,16 +21,6 @@ QUnit.test( "Change sign test", function( assert){
     assert.deepEqual(document.getElementById("screen").value, "-2", "Passed - Expected -2")
     current_input = "0";
 });
-
-
-// Test for all clear
-QUnit.test( "All clear test", function ( assert){
-    addDigit('AC');
-    allClear(current_input);
-    assert.deepEqual(document.getElementById("screen").value, "0", "Passed - Expected 0")
-    current_input = "0";
-});
-
 //Test for finding the inverse of a #
 QUnit.test( "Calculate inverse test", function( assert){
     addDigit('5');
