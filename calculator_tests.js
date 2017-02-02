@@ -34,4 +34,10 @@ QUnit.test( "Find factorial test", function( assert){
     assert.deepEqual(document.getElementById("screen").value, "24", "Passed - Expected 24")
     current_input = "0";
 });
-
+//Test the squaring function
+QUnit.test( "Calculate the square", function( assert){
+    addDigit('2');
+    square(current_input);
+    assert.deepEqual(document.getElementById("screen").value, "4", "Passed - Expected 4")
+    current_input = "0";
+})
